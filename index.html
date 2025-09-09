@@ -9,28 +9,59 @@
       background-color: #0d0d0d;
       color: #f5f5f5;
       text-align: center;
-      padding: 50px;
+      padding: 30px;
+      margin: 0;
+    }
+    header {
+      margin-bottom: 40px;
+    }
+    header img {
+      width: 120px;
+      margin-bottom: 15px;
     }
     h1 {
       color: gold;
-      font-size: 40px;
+      font-size: 42px;
+      margin: 10px 0;
     }
     h1 span {
       color: #00aaff;
     }
+    p {
+      font-size: 18px;
+      color: #ddd;
+    }
+    .links {
+      margin: 30px 0;
+    }
     a {
       display: inline-block;
-      margin: 15px;
-      padding: 12px 25px;
+      margin: 12px;
+      padding: 12px 28px;
       text-decoration: none;
       font-size: 20px;
+      font-weight: bold;
       color: #0d0d0d;
-      background-color: gold;
-      border-radius: 8px;
-      transition: 0.3s;
+      background: linear-gradient(135deg, gold, #ffcc00);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(255, 215, 0, 0.4);
+      transition: all 0.3s ease;
     }
     a:hover {
-      background-color: #ffcc00;
+      transform: translateY(-4px);
+      box-shadow: 0 6px 12px rgba(255, 215, 0, 0.6);
+    }
+    section {
+      max-width: 700px;
+      margin: 0 auto 50px auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+    }
+    section h2 {
+      color: gold;
+      margin-bottom: 15px;
     }
     footer {
       margin-top: 50px;
@@ -40,12 +71,27 @@
   </style>
 </head>
 <body>
-  <h1>✨ Camelot Mafia <span>✔️</span></h1>
-  <p>Bizning rasmiy platformalar:</p>
+  <header>
+    <!-- Logotip faylingizni shu yerga joylashtiring (logo.png) -->
+    <img src="logo.png" alt="Camelot Mafia logotipi">
+    <h1>✨ Camelot Mafia <span>✔️</span></h1>
+    <p>Bizning rasmiy platformalar:</p>
+  </header>
 
-  <a href="https://t.me/CamelotMafiaBot" target="_blank">🤖 O‘yin Boti</a>
-  <a href="https://t.me/CamelotMafiaNews" target="_blank">📢 Yangiliklar Kanali</a>
-  <a href="https://t.me/CamelotYordamBot" target="_blank">🤝 Yordam Boti</a>
+  <div class="links">
+    <a href="https://t.me/CamelotMafiaBot" target="_blank">🤖 O‘yin Boti</a>
+    <a href="https://t.me/CamelotMafiaNews" target="_blank">📢 Yangiliklar Kanali</a>
+    <a href="https://t.me/CamelotYordamBot" target="_blank">🤝 Yordam Boti</a>
+  </div>
+
+  <section>
+    <h2>ℹ️ Biz haqimizda</h2>
+    <p>
+      Camelot Mafia — bu onlayn muloqot va o‘yin platformasi bo‘lib, 
+      do‘stlaringiz bilan maroqli vaqt o‘tkazishingiz, yangiliklardan 
+      xabardor bo‘lishingiz va qo‘llab-quvvatlash xizmatidan foydalanishingiz mumkin.
+    </p>
+  </section>
 
   <footer>
     <p>© 2025 Camelot Mafia. Barcha huquqlar himoyalangan.</p>
